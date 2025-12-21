@@ -119,6 +119,39 @@
       object-fit: cover;
     }
 
+    .iphone-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 24px;
+      margin-bottom: 40px;
+    }
+    
+    .iphone-grid img {
+      width: 100%;
+      height: auto;
+      border-radius: 16px;
+    }
+
+    .ipad-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 32px;
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+    
+    .ipad-grid img {
+      width: 100%;
+      height: auto;
+      border-radius: 18px;
+    }
+    
+    .screenshots h3 {
+      margin: 32px 0 16px;
+      font-size: 1.4rem;
+      font-weight: 600;
+    }
+    
     footer {
       background: #f5f7fa;
       text-align: center;
@@ -245,6 +278,25 @@
     <img src="images/iPad/Screen 4.png" alt="BP Journal iPad Screenshot 3" />
   </div>
 </section>
+
+<section class="screenshots">
+  <h2>See BP Journal in Action</h2>
+
+  <h3>iPhone</h3>
+  <div class="iphone-grid">
+    <img src="images/iPhone/Screen 1.png" alt="BP readings list on iPhone">
+    <img src="images/iPhone/Screen 2.png alt="Add BP reading on iPhone">
+    <img src="images/iPhone/Screen 3.png" alt="Charts on iPhone">
+    <img src="images/iPhone/Screen 4.png" alt="Settings on iPhone">
+  </div>
+
+  <h3>iPad</h3>
+  <div class="ipad-grid">
+    <img src="images/iPad/Screen 1.png" alt="BP readings on iPad">
+    <img src="images/iPad/Screen 1.png" alt="Charts on iPad">
+  </div>
+</section>
+  
 
   
 <section>
